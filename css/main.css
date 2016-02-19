@@ -420,7 +420,8 @@ a {
   #sync2 .item {
     padding: 11px 0;
     cursor: pointer;
-    transition: all 0.25s ease; }
+    transition: all 0.25s ease;
+    line-height: 17px; }
   #sync2 .synced {
     background-color: #1290da;
     color: #fff; }
