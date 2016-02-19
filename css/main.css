@@ -59,9 +59,19 @@ a {
   a:hover {
     text-decoration: none;
     color: #505050; }
+  a:focus {
+    text-decoration: none;
+    color: #505050;
+    outline: none; }
 
 .hidden {
   display: none; }
+
+.banner--clone {
+  z-index: 5;
+  background-color: #fff;
+  width: 100%;
+  padding: 7px 0 !important; }
 
 .top_line {
   padding: 20px 0; }
@@ -563,24 +573,27 @@ a {
   top: 84px;
   right: 25%; }
 
-.my_form {
+#myform1 {
+  margin: auto;
+  position: relative; }
+
+.my_form, #myform1 {
   background-color: #626d75;
   padding: 0 40px 65px;
-  width: 300px;
-  display: inline-block; }
-  .my_form h3 {
+  width: 300px; }
+  .my_form h3, #myform1 h3 {
     color: white;
     font-family: "robotothin", sans-serif;
     font-size: 26px;
     font-weight: 100;
     margin-top: 15px; }
-  .my_form input {
+  .my_form input, .my_form textarea, #myform1 input, #myform1 textarea {
     width: 100%;
     padding: 4px 20px;
     font-family: "robotothin", sans-serif;
     font-size: 18px;
     margin-bottom: 30px; }
-  .my_form button {
+  .my_form .button, #myform1 .button {
     border: none;
     width: 100%;
     padding: 12px 55px; }

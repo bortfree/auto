@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/headhesive/headhesive.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -32,8 +33,8 @@
 
 <body>
 
-	<header class="main_head">
-		<div class="top_line">
+	<header id="about" class="main_head">
+		<div class="top_line banner head-fixed">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-3">
@@ -50,14 +51,14 @@
 					<div class="col-xs-9">
 						<nav class="menu">
 							<ul>
-								<li><a class="active" href="#">Главная</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Этапы</a></li>
-								<li><a href="#">Цены</a></li>
-								<li><a href="#">Команда</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Наши работы</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a class="active" href="#about">Главная</a></li>
+								<li><a href="#uslugi">Услуги</a></li>
+								<li><a href="#step">Этапы</a></li>
+								<li><a href="#price">Цены</a></li>
+								<li><a href="#com">Команда</a></li>
+								<li><a href="#otz">Отзывы</a></li>
+								<li><a href="#work">Наши работы</a></li>
+								<li><a href="#contact">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -74,6 +75,7 @@
 					</div>
 					<div class="col-xs-6">
 						<div class="head_descr_wrap">
+							<a id="showHere"></a>
 							<h1>Малярно-кузовной ремонт</h1>
 							<p class="contact">Звоните! 8 (812)  309 10 09,  (911)  924 70 26</p>
 							<p>Неизменно высокое<br> качество по низким ценам!</p>
@@ -81,7 +83,7 @@
 					</div>
 					<div class="col-xs-12">
 						<div class="button_wrap">
-							<a href="#" class="button">Заявка на ремонт</a>
+							<a href="#callback" class="button">Заявка на ремонт</a>
 						</div>
 					</div>
 				</div>
@@ -89,7 +91,7 @@
 		</div>
 	</header>
 
-	<section class="sect1">
+	<section id="step" class="sect1">
 		<div class="title_wrap">
 			<h2>Этапы ремонта</h2>
 		</div>
@@ -156,7 +158,7 @@
 
 	</section>
 
-	<section class="sect2 color">
+	<section id="uslugi" class="sect2 color">
 		<div class="title_wrap">
 			<h2>Наши услуги</h2>
 		</div>
@@ -252,7 +254,7 @@
 
 	</section>
 
-	<section class="sect3">
+	<section id="price" class="sect3">
 		<div class="title_wrap">
 			<h2>Наши цены</h2>
 		</div>
@@ -399,7 +401,7 @@
 		</div>
 	</section>
 
-	<section class="section sect4 color">
+	<section id="com" class="section sect4 color">
 		<div class="title_wrap">
 			<h2>Наша команда</h2>
 		</div>
@@ -488,7 +490,7 @@
 
 	</section>
 
-	<section class="section sect5">
+	<section id="otz" class="section sect5">
 		<div class="title_wrap">
 			<h2>Отзывы</h2>
 		</div>
@@ -520,7 +522,7 @@
 					<div class="col-xs-12">
 						
 						<div class="button_wrap">
-							<a href="#" class="button">Оставить отзыв</a>
+							<a href="#myform1" class="button popup">Оставить отзыв</a>
 						</div>
 
 					</div>
@@ -530,7 +532,7 @@
 		</div>
 	</section>
 
-	<section class="section sect6 color">
+	<section id="work" class="section sect6 color">
 		<div class="title_wrap">
 			<h2>Наши работы</h2>
 		</div>
@@ -568,7 +570,7 @@
 
 	</section>
 
-	<section class="section sect7 color">
+	<section id="contact" class="section sect7 color">
 		<div class="title_wrap">
 			<h2>Контакты</h2>
 		</div>
@@ -589,7 +591,7 @@
 		</div>
 	</section>
 
-	<div class="maps">
+	<div id="callback" class="maps">
 		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Cry1Nuvxndx1nhnHnkkgc8znnl7dVzAY&width=100%&height=520&lang=ru_RU&sourceType=constructor"></script>
 
 		<div class="container">
@@ -601,6 +603,11 @@
 						<input type="text" name="Name" required placeholder="ваше имя">
 						<input type="text" name="Phone" required placeholder="номер телефона">
 						<button class="button">Отправить</button>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Автохирургия">
+						<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+						<input type="hidden" name="form_subject" value="Заявка">
+						<!-- END Hidden Required Fields -->
 					</form>
 				</div>
 
@@ -635,7 +642,7 @@
 					<div class="razr_wrap">
 						<div class="razr_wr">разработка сайта</div>
 						<div class="logo_razr">
-						<a href="#"><img src="img/logo_razr.png" alt="Topmark"></a>
+							<a href="#"><img src="img/logo_razr.png" alt="Topmark"></a>
 						</div>
 					</div>
 				</div>
@@ -643,7 +650,24 @@
 		</div>
 	</footer>
 	
-	<div class="hidden"></div>
+	<div class="hidden">
+		
+		<div class="my_form ">
+			<form id="myform1">
+				<h3>Оставьте отзыв</h3>
+				<input type="text" name="Name" required placeholder="ваше имя">
+				<input type="text" name="Phone" required placeholder="номер телефона">
+				<textarea name="Otziv" placeholder="Оставьте отзыв..."></textarea>
+				<button class="button">Отправить</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Автохирургия">
+				<input type="hidden" name="admin_email" value="ebortnikov@mail.ru">
+				<input type="hidden" name="form_subject" value="Отзыв">
+				<!-- END Hidden Required Fields -->
+			</form>
+		</div>
+
+	</div>
 
 	<div class="loader">
 		<div class="loader_inner"></div>
@@ -662,6 +686,8 @@
 	<script src="libs/equalHeight/jquery.equalheights.min.js"></script>
 	<script src="libs/owlcarousel/owl.carousel.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/headhesive/headhesive.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	
 	<script src="js/common.js"></script>
