@@ -46,7 +46,7 @@ body textarea:focus:required:invalid
 	color: red
 body input:required:valid,
 body textarea:required:valid
-	color: green
+	color: #505050
 
 h1, h2, h3, h4
 	text-transform: uppercase
@@ -71,24 +71,25 @@ a
 
 .top_line
 	padding: 20px 0
-	.logo
-		&__img
-			display: inline-block
-			float: left
-			margin-right: 5px
-		&__descr
-			display: inline-block
-			h3
-				margin: 0
-				font-size: 24px
-				font-weight: 400
-				line-height: 25px
-				position: relative
-			span
-				font-size: 11px
-				line-height: 13px
-				display: block
-				position: relative
+
+.logo
+	&__img
+		display: inline-block
+		float: left
+		margin-right: 5px
+	&__descr
+		display: inline-block
+		h3
+			margin: 0
+			font-size: 24px
+			font-weight: 400
+			line-height: 25px
+			position: relative
+		span
+			font-size: 11px
+			line-height: 13px
+			display: block
+			position: relative
 
 
 .menu
@@ -438,12 +439,203 @@ a
 .sect4
 	padding-top: 15px
 	background-image: url(../img/bg_sect4.jpg)
-	height: 550px
+	text-align: center
+	.title_wrap
+		h2
+			margin-bottom: 15px
+			&::after
+				background-color: $color
+	.item
+		width: 265px
+		display: inline-block
+		margin-bottom: 20px
+		&__descr
+			h4
+				margin: 0
+				text-transform: none
+				font-size: 22px
+				font-weight: 400
+			p
+				font-size: 14px
+				font-family: "robotothin", sans-serif
+				margin: 0
+				margin-bottom: 10px
+
+.sect5
+	padding-top: 15px
+	padding-bottom: 25px
+	.item
+		padding: 0 40px
+		.otz
+			line-height: 19px
+			display: block
+			position: relative
+			&::before, &::after
+				content: ''
+				position: absolute
+				width: 16px
+				height: 15px
+				background-image: url(../img/ic_kav.png)
+			&::before
+				top: 0
+				left: -23px
+			&::after
+				right: 0
+				bottom: 0
+		.podp
+			font-size: 20px
+			line-height: 24px
+	.button_wrap
+		margin: 50px 0 30px
+		.button
+			padding: 15px 70px
+
+.sect6
+	padding-top: 15px
+	background-image: url(../img/bg_sect6.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 400px
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		background-color: #000
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		opacity: .65
 	.title_wrap
 		h2
 			&::after
 				background-color: $color
-				
+			&::before
+				background-color: #505050
+	.slider2
+		margin-top: 25px
+		.slide
+			width: 287px
+			height: 152px
+			border: 1px solid #cbcbcb
+			display: inline-block
+			padding: 7px
+			background-color: #fff
+			cursor: pointer
+			margin: 0 10px
+			img
+				width: 100%
+				border: 1px solid #cbcbcb
+		.owl-controls
+			.owl-buttons
+				.owl-prev, .owl-next
+					border: none
+					top: 30px
+				.owl-prev
+					background-image: url(../img/arrow_left_sect6.png)
+					left: -52px
+				.owl-next
+					background-image: url(../img/arrow_right_sect6.png)
+					right: -52px
+
+.sect7
+	padding-top: 15px
+	padding-bottom: 25px
+	position: relative
+	text-align: center
+	background-color: #626d75
+	font-family: "robotothin", sans-serif
+	font-size: 22px
+	font-weight: 100
+	.title_wrap
+		h2
+			&::after
+				background-color: $color
+	.wrap_adres
+		position: relative
+		p
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			width: 20px
+			height: 29px
+			background-image: url(../img/maps.png)
+			top: 5px
+			left: 80px
+	.wrap_tel
+		margin-top: -15px
+		position: relative
+		p
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			background-image: url(../img/ic_tel.png)
+			width: 29px
+			height: 29px
+			top: 20px
+			left: 40px
+
+.maps
+	position: relative
+	
+.form_inline
+	position: absolute
+	top: 84px
+	right: 25%
+
+.my_form
+	background-color: #626d75
+	padding: 0 40px 65px
+	width: 300px
+	display: inline-block
+	h3
+		color: white
+		font-family: "robotothin", sans-serif
+		font-size: 26px
+		font-weight: 100
+		margin-top: 15px
+	input
+		width: 100%
+		padding: 4px 20px
+		font-family: "robotothin", sans-serif
+		font-size: 18px
+		margin-bottom: 30px
+	button
+		border: none
+		width: 100%
+		padding: 12px 55px
 
 
-
+.main_footer
+	background-color: #309bd9
+	color: #fff
+	padding: 8px 0
+	.logo
+		position: relative
+		top: 5px
+	.wrap_desc
+		display: inline-block
+		font-family: "robotothin", sans-serif
+		font-size: 18px
+		margin-right: 20px
+		position: relative
+		top: -14px
+	.wrap_contact
+		display: inline-block
+		font-size: 20px
+		line-height: 24px
+	.razr_wrap
+		float: right
+		margin-right: 50px
+		.razr_wr
+			display: inline-block
+			position: relative
+			font-family: "robotothin", sans-serif
+			font-size: 12px
+			margin-right: 25px
+		.logo_razr
+			display: inline-block
+			position: relative
